@@ -30,3 +30,6 @@ mkdir -p /etc/systemd/system/docker.service.d
 # Restart Docker
 systemctl daemon-reload
 systemctl restart docker
+sudo apt-get update
+sudo apt-get install -y docker-ce kubelet kubeadm kubectl
+sudo apt-mark hold docker-ce kubelet kubeadm kubectl
